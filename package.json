@@ -1,0 +1,24 @@
+{
+  "name": "sitonchair",
+  "version": "1.0.0",
+  "description": "Sit On Chair project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inka3inka/SitOnChair.git"
+  },
+  "author": "Paulina Kaczanowska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inka3inka/SitOnChair/issues"
+  },
+  "homepage": "https://github.com/inka3inka/SitOnChair#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}

@@ -1,0 +1,21 @@
+
+//footer {
+//  section {
+//    border: 1px solid black;
+//  }
+//}
+
+footer {
+
+  display: flex;
+  flex-direction: column-reverse;
+
+  section {
+    text-align: center;
+    margin: 2vw;
+
+    div.icons {
+      margin: 3vw;
+    }
+  }
+}

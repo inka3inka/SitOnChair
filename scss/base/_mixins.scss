@@ -1,0 +1,31 @@
+@import "variables";
+
+@mixin colorful-line($top, $left) {
+  content: "";
+  border: 3px solid $colourful-color;
+  width: 14rem;
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+
+@mixin tile-background($address) {
+  background-image: url($address);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin h2 {
+  width: 100%;
+  height: 15vw;
+  padding: 4vw 0;
+  position: relative;
+}
+
+@mixin button {
+  border: none;
+  border-radius: 7px;
+  background-color: $colourful-color;
+  width: 50vw;
+  height: 13vw;
+}

@@ -1,56 +1,148 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
+    <title>Sit on chair</title>
     <meta charset="UTF-8">
-    <meta name="description" content="chairs, modern, offer">
-    <meta name="viewport" content="width=device-width", initial-scale=1>
-    <title>Sit on Chair</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="container">
+        <nav>
 
-        </div>
-
-    </header>
-    <section class="first-look">
+        </nav>
         <div class="container">
-            <div class="first-look-div">
-                <p><</p>
+            <div>
                 <img src="images/black_chair.png">
-                <div class="first-look-div-container">
-                    <h1>SIT ON OUR CHAIR</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fringilla nisi nunc, ut vehicula arcu condimentum id. Fusce venenatis non nunc ut suscipit.</p>
-                    <button>ZOBACZ WIĘCEJ</button>
-                </div>
+            </div>
+            <div>
+                <p>
+                    <span>SIT</span>
+                    <span>ON</span>
+                    <span>OUR</span>
+                    <span>CHAIR</span>
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non pellentesque elit, ut tempus quam. Maecenas vitae consequat urna, eget commodo dolor.
+                </p>
+            </div>
+            <div>
+                <button>WIĘCEJ</button>
             </div>
         </div>
+    </header>
 
-    </section>
-    <section>
+    <article class="tiles">
         <div class="container">
-
+            <section class="tile intro">
+                <p>In malesuada ullamcorper velit, eget sagittis augue sollicitudin vel. Donec varius rutrum diam eget tempor.</p>
+                <h3>In malesuada</h3>
+            </section>
+            <section class="tile">
+                <h3>Chair CLAIR</h3>
+            </section>
+            <section class="tile">
+                <h3>Chair MARGERITA</h3>
+            </section>
         </div>
+    </article>
 
-    </section>
-    <section>
+    <article class="prices">
+        <h2>CENNIK</h2>
         <div class="container">
-
+            <section class="plan">
+                <div class="price">
+                    <p>BASIC PLAN</p>
+                    <div class="radius">
+                        <div class="container">
+                            <p class="num">89,99</p>
+                            <p class="pln">PLN/MSC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="conditions">
+                    <p>ZAKUP TOWARU + DOWÓZ</p>
+                    <P>SERWIS</P>
+                </div>
+                <div class="btn">
+                    <button>DOŁĄCZ</button>
+                </div>
+            </section>
+            <section class="plan colored">
+                <div class="price">
+                    <p>STANDARD PLAN</p>
+                    <div class="radius">
+                        <div class="container">
+                            <p class="num">99,99</p>
+                            <p class="pln">PLN/MSC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="conditions">
+                    <p>ZAKUP TOWARU + DOWÓZ</p>
+                    <p>SERWIS</p>
+                    <p>GWARANCJA 5 LAT</p>
+                </div>
+                <div class="btn">
+                    <button class="color-reversed">DOŁĄCZ</button>
+                </div>
+            </section>
+            <section class="plan">
+                <div class="price">
+                    <p>ADVANCED PLAN</p>
+                    <div class="radius">
+                        <div class="container">
+                            <p class="num">211,99</p>
+                            <p class="pln">PLN/MSC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="conditions">
+                    <p>ZAKUP TOWARU + DOWÓZ</p>
+                    <p>SERWIS</p>
+                    <p>GWARANCJA 6 LAT</p>
+                    <p>PORADY PRAWNE</p>
+                </div>
+                <div class="btn">
+                    <button>DOŁĄCZ</button>
+                </div>
+            </section>
         </div>
-
-    </section>
-    <section>
+    </article>
+    <article class="form">
+        <h2>KONTAKT</h2>
         <div class="container">
-
+            <form>
+                <input type="text" name="name" placeholder="Imię">
+                <input type="email" name="email" placeholder="email">
+                <textarea type="text" name="message" placeholder="Wiadomość"></textarea>
+            </form>
+            <section class="agreement">
+                <div class="container">
+                    <input type="checkbox" name="agreement" id="c1"><label for="c1"><span></span></label>
+                    <div>Zgadzam się na przetwarzanie danych osobowych</div>
+                </div>
+                <button>WYŚLIJ</button>
+                <img src="images/red_chair.png">
+            </section>
         </div>
-
-    </section>
+    </article>
     <footer>
-        <div class="container">
-
-        </div>
-
+        <section>
+            <p>Copyright 2014 | All Rights Reserved. - Sit On Chair</p>
+        </section>
+        <section>
+            <div class="icons">
+                <img src="images/flickr.png">
+                <img src="images/pinterest.png">
+                <img src="images/twitter.png">
+                <img src="images/vimeo.png">
+            </div>
+            <div class="brand">
+                <p>SIT <span>ON</span> CHAIR</p>
+            </div>
+        </section>
     </footer>
 </body>
 </html>

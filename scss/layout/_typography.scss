@@ -1,0 +1,119 @@
+@import "../base/_variables.scss";
+@import "../base/mixins.scss";
+
+html {
+  font-size: 4vw;
+}
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: $color-2;
+}
+
+
+header {
+
+  p {
+    font-size: 1.75rem;
+    color: $color-1;
+  }
+
+  p:first-child {
+    font-size: 2.5rem;
+
+    span:nth-of-type(2n+2) {
+      color: $colourful-color;
+      font-weight: 600;
+    }
+  }
+}
+
+
+article.tiles {
+  font-size: 1.4rem;
+}
+
+
+article.prices {
+
+  section.plan {
+    font-size: 1.8rem;
+
+    div.price > p {
+      color: $colourful-color;
+    }
+
+    div.radius {
+      font-size: 1.2rem;
+
+      p.num {
+        font-size: 1.5rem;
+        font-weight: 900;
+      }
+    }
+
+    div.conditions {
+      font-size: 1.4rem;
+    }
+  }
+
+  section.plan.colored {
+
+    div.price > p {
+      color: $color-5;
+    }
+
+    div.radius {
+      color: $colourful-color;
+    }
+  }
+}
+
+
+article.form {
+
+  input, textarea {
+    font-size: 1.2rem;
+  }
+}
+
+
+footer {
+
+  section {
+    font-size: 1.2rem;
+  }
+
+  div.brand {
+    font-size: 1.5rem;
+
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+//buttons
+
+button {
+  font-size: 1.5rem;
+  color: $color-4;
+  font-weight: 600;
+}
+
+button.color-reversed {
+  color: $colourful-color;
+}
+
+// h2, h3
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}

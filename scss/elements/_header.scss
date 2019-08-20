@@ -1,0 +1,33 @@
+@import "../base/_variables.scss";
+@import "../base/mixins.scss";
+
+header {
+  width: 100vw;
+
+  div.container {
+
+    padding: 2vw 0 4vw;
+
+    div {
+      //border: 1px solid black;
+      text-align: center;
+      padding: 3vw 2vw;
+
+      p:first-child {
+        margin-bottom: 5vw;
+      }
+    }
+
+    button {
+      @include button;
+    }
+  }
+}
+
+header {
+
+  img {
+    width: 100%;
+  }
+}
+

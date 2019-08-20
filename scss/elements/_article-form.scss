@@ -1,0 +1,101 @@
+@import "../base/_mixins.scss";
+@import "../base/_variables.scss";
+
+//article.form {
+//  div.container {
+//    form, section {
+//      border: 1px solid black;
+//    }
+//  }
+//}
+
+article.form {
+
+  padding: 4vw 0;
+
+  h2 {
+    @include h2;
+
+    &:after {
+      @include colorful-line(3rem, 0);
+    }
+  }
+
+  div.container {
+    text-align: center;
+
+  }
+}
+
+form {
+
+  input, textarea {
+    width: 80%;
+    height: 2.5rem;
+    margin: 3vw;
+    text-indent: .5rem;
+  }
+
+  textarea {
+    height: 7.5rem;
+  }
+}
+
+section.agreement {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  div.container {
+    width: 80%;
+    height: 25vw;
+
+    div {
+      width: 70%;
+      line-height: 1.5rem;
+      float: right;
+      text-align: left;
+      margin-top: 3vw;
+    }
+
+    label {
+      width: 30%;
+    }
+
+    label, button {
+      margin: 2vw 0;
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    input[type="checkbox"] + label span {
+      border: 1px solid $colourful-color;
+      display: inline-block;
+      width: 12vw;
+      height: 12vw;
+      margin: 3vw 5vw 0 0;
+      vertical-align: middle;
+      cursor: pointer;
+
+    }
+
+    input[type="checkbox"]:checked + label span {
+      background: url("../images/form_ok.jpg") -.5vw no-repeat;
+      background-size: contain;
+    }
+  }
+
+  button {
+    @include button;
+  }
+
+  img {
+    width: 80%;
+    padding: 4vw 0;
+  }
+}
+
