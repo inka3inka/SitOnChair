@@ -4,8 +4,27 @@
 article.tiles {
   width: 100vw;
 
+  @include media-desktop {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   div.container {
     padding: 1vw 0;
+
+    @include media-tablet {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 2vw 3vw;
+    }
+
+    @include media-desktop {
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: nowrap;
+      padding: 2vw 3vw;
+    }
 
     section {
       border: 1px solid $color-3;
@@ -22,11 +41,21 @@ article.tiles {
         &:after {
           @include colorful-line(3rem, 0);
         }
+
+        @include media-tablet {
+          height: 6vw;
+          line-height: 6vw;
+        }
+
+        @include media-desktop {
+          height: 3.5vw;
+          line-height: 3.5vw;
+        }
       }
 
       p {
         text-align: center;
-        padding: 2vw 0;
+        padding: 2vw 1vw;
       }
     }
   }
@@ -36,6 +65,18 @@ section.tile {
   width: 80%;
   margin: 7vw auto;
   height: 48vw;
+
+  @include media-tablet {
+    width: 40%;
+    margin: 2vw auto;
+    height: 25vw;
+  }
+
+  @include media-desktop {
+    width: 30%;
+    margin: 2vw auto;
+    height: 15vw;
+  }
 }
 
 section.tile:nth-child(2) {

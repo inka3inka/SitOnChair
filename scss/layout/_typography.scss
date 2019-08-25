@@ -3,6 +3,14 @@
 
 html {
   font-size: 4vw;
+
+  @include media-tablet {
+    font-size: 1.5vw;
+  }
+
+  @include media-desktop {
+    font-size: .8vw;
+  }
 }
 
 
@@ -17,6 +25,10 @@ header {
   p {
     font-size: 1.75rem;
     color: $color-1;
+
+    @include media-desktop {
+      font-weight: 300;
+    }
   }
 
   p:first-child {
@@ -25,6 +37,11 @@ header {
     span:nth-of-type(2n+2) {
       color: $colourful-color;
       font-weight: 600;
+    }
+
+    @include media-desktop {
+      font-size: 3rem;
+      font-weight: 400;
     }
   }
 }
@@ -40,6 +57,10 @@ article.prices {
   section.plan {
     font-size: 1.8rem;
 
+    @include media-desktop {
+      font-size: 2rem;
+    }
+
     div.price > p {
       color: $colourful-color;
     }
@@ -47,14 +68,26 @@ article.prices {
     div.radius {
       font-size: 1.2rem;
 
+      @include media-desktop {
+        font-size: 1.5rem;
+      }
+
       p.num {
         font-size: 1.5rem;
         font-weight: 900;
+
+        @include media-desktop {
+          font-size: 2rem;
+        }
       }
     }
 
     div.conditions {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
+
+      @include media-desktop {
+        font-size: 1.5rem;
+      }
     }
   }
 
@@ -76,6 +109,16 @@ article.form {
   input, textarea {
     font-size: 1.2rem;
   }
+
+  section.agreement {
+    @include media-tablet {
+      font-size: 1.2rem;
+    }
+
+    @include media-desktop {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 
@@ -83,10 +126,18 @@ footer {
 
   section {
     font-size: 1.2rem;
+
+    @include media-desktop {
+      font-size: 1.5rem;
+    }
   }
 
   div.brand {
     font-size: 1.5rem;
+
+    @include media-desktop {
+      font-size: 2rem;
+    }
 
     span {
       font-weight: 600;
@@ -109,8 +160,16 @@ button.color-reversed {
 // h2, h3
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
+
+  @include media-tablet {
+    font-size: 2rem;
+  }
+
+  @include media-desktop {
+    font-size: 2.5rem;
+  }
 }
 
 h3 {

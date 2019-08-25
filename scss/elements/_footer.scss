@@ -1,21 +1,54 @@
-
-//footer {
-//  section {
-//    border: 1px solid black;
-//  }
-//}
+@import "../base/_mixins.scss";
 
 footer {
 
   display: flex;
   flex-direction: column-reverse;
 
+  @include media-desktop {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1vw 0;
+    flex-direction: row;
+  }
+
   section {
+
     text-align: center;
     margin: 2vw;
 
+    @include media-desktop {
+      width: 50%;
+      height: 10vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
     div.icons {
       margin: 3vw;
+
+      @include media-desktop {
+        margin: 1vw;
+      }
+
+      img {
+        width: 8vw;
+        height: 8vw;
+
+        @include media-desktop {
+          width: 3vw;
+          height: 3vw;
+        }
+      }
+    }
+  }
+
+  section:last-child {
+    @include media-desktop {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: flex-start;
     }
   }
 }

@@ -3,16 +3,50 @@
 
 article.prices {
 
+  @include media-tablet {
+    padding: 2vw 0;
+  }
+
+  @include media-desktop {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   h2 {
     @include h2;
 
     &:after {
       @include colorful-line(3rem, 0);
+
+      @include media-desktop {
+
+        @include colorful-line(5rem, 0);
+      }
+    }
+
+    @include media-desktop {
+      margin-left: 2vw;
     }
   }
 
   div.container {
     padding: 4vw 0;
+
+    @include media-tablet {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 1vw 2vw;
+    }
+
+    @include media-desktop {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      padding: 1vw 2vw;
+    }
 
     section {
       border: 1px solid $color-3;
@@ -25,11 +59,23 @@ article.prices {
 }
 
 section.plan {
-  width: 80%;
+  width: 70%;
   height: 120vw;
   margin: 0 auto 5vw;
   border-radius: 10px;
   background-color: $prices-background-color;
+
+  @include media-tablet {
+    width: 35%;
+    height: 60vw;
+    margin: 2vw 4vw;
+  }
+
+  @include media-desktop {
+    width: 25%;
+    height: 40vw;
+    margin: 1vw 1vw;
+  }
 
   div.price {
     height: 50%;
@@ -55,6 +101,36 @@ section.plan {
         top: 50%;
         left: 25%;
         transform: translateY(-50%);
+
+        @include media-tablet {
+          display: flex;
+          flex-direction: column;
+          left: 13%;
+
+          p {
+            margin-bottom: 1vw;
+          }
+        }
+
+        @include media-desktop {
+          display: flex;
+          flex-direction: column;
+          left: 5%;
+
+          p {
+            margin-bottom: .5vw;
+          }
+        }
+      }
+
+      @include media-tablet {
+        width: 16vw;
+        height: 16vw;
+      }
+
+      @include media-desktop {
+        width: 10vw;
+        height: 10vw;
       }
     }
   }
@@ -71,6 +147,16 @@ section.plan {
       text-align: center;
       height: 2.5rem;
       line-height: 2.5rem;
+
+      @include media-tablet {
+        height: 3rem;
+        line-height: 3rem;
+      }
+
+      @include media-desktop {
+        height: 4rem;
+        line-height: 4rem;
+      }
     }
 
     p:nth-of-type(2n+1){
@@ -82,11 +168,22 @@ section.plan {
   }
 
   div.btn {
-    text-align: center;
-    height: 15%;
+    width: 50vw;
+    height: 15vw;
+    margin: 0 auto;
 
     button {
       @include button;
+    }
+
+    @include media-tablet {
+      width: 50%;
+      height: 6vw;
+    }
+
+    @include media-desktop {
+      width: 50%;
+      height: 4vw;
     }
   }
 }
