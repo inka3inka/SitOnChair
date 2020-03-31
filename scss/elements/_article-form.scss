@@ -47,12 +47,8 @@ article.form {
     }
 
     @include media-desktop {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
       margin: 0 3vw;
       text-align: right;
-      justify-content: center;
     }
 
   }
@@ -67,7 +63,6 @@ form {
 
   @include media-desktop {
     width: 50%;
-    padding-top: 3vw;
   }
 
   input, textarea {
@@ -118,9 +113,7 @@ section.agreement {
     }
 
     @include media-desktop {
-      padding-top: 2vw;
       height: 10vw;
-      display: inline-block;
     }
 
     div {
@@ -174,9 +167,6 @@ section.agreement {
       @include media-desktop {
         width: 4vw;
         height: 4vw;
-        margin: 0;
-        float: left;
-        position: absolute;
         top: -1vw;
         right: -.5vw;
       }
@@ -221,8 +211,6 @@ section.agreement {
 
     @include media-desktop {
       width: 60%;
-      padding: 0;
-      margin: 1vw 0;
     }
   }
 }

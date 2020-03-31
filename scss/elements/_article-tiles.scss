@@ -20,10 +20,8 @@ article.tiles {
     }
 
     @include media-desktop {
-      display: flex;
       flex-direction: row-reverse;
       flex-wrap: nowrap;
-      padding: 2vw 3vw;
     }
 
     section {
@@ -74,7 +72,6 @@ section.tile {
 
   @include media-desktop {
     width: 30%;
-    margin: 2vw auto;
     height: 15vw;
   }
 }

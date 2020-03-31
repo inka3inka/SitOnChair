@@ -21,9 +21,6 @@ header {
     }
 
     @include media-desktop {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
       padding: 0 2vw 0 0;
     }
 
@@ -70,12 +67,6 @@ header {
 
       @include media-desktop {
         width: 50%;
-
-        @include media-desktop {
-          display: flex;
-          flex-direction: column;
-          padding-bottom: 0;
-        }
       }
     }
 
@@ -100,11 +91,6 @@ header {
         @include button;
 
         @include media-tablet {
-          width: 45%;
-          height: 45%;
-        }
-
-        @include media-desktop {
           width: 45%;
           height: 45%;
         }
